@@ -1,0 +1,36 @@
+exclude: ^(profiling/|tests/data/)
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: check-added-large-files
+        args: ['--maxkb=650']
+    -   id: check-ast
+    -   id: check-builtin-literals
+    -   id: check-docstring-first
+    -   id: check-executables-have-shebangs
+    -   id: check-shebang-scripts-are-executable
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: detect-private-key
+    -   id: end-of-file-fixer
+    -   id: mixed-line-ending
+    -   id: requirements-txt-fixer
+    -   id: trailing-whitespace
+
+-   repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+    -   id: black
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+
+-   repo: https://github.com/PyCQA/autoflake
+    rev: v2.3.1
+    hooks:
+    -   id: autoflake
