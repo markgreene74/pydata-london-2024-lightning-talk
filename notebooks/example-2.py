@@ -16,22 +16,22 @@
 # # Example 2 - Jupyter notebook -> Python file
 
 # %% [markdown]
-# This example is taken from the Seaborn documentation (https://seaborn.pydata.org/examples/regression_marginals.html)
+# This example is taken from the Seaborn documentation (https://seaborn.pydata.org/examples/scatter_bubbles.html)
 
 # %%
 import seaborn as sns
 
-sns.set_theme(style="darkgrid")
+sns.set_theme(style="white")
 
-tips = sns.load_dataset("tips")
-g = sns.jointplot(
-    x="total_bill",
-    y="tip",
-    data=tips,
-    kind="reg",
-    truncate=False,
-    xlim=(0, 60),
-    ylim=(0, 12),
-    color="m",
-    height=7,
+mpg = sns.load_dataset("mpg")
+sns.relplot(
+    x="horsepower",
+    y="mpg",
+    hue="origin",
+    size="weight",
+    sizes=(40, 400),
+    alpha=0.5,
+    palette="muted",
+    height=6,
+    data=mpg,
 )
