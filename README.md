@@ -24,4 +24,8 @@ This repo contains the slides and some [Jupytext](https://github.com/mwouts/jupy
 
 ## Example 1 - Jupyter notebook -> Python file
 
+In this example the notebook `example-1.ipynb` was created in Jupyter. The Python file (`example-1.py`) was not created manually, but instead was created by Jupytext the first time I saved the notebook.
+
+Try to make changes to the notebook and see the same changes reflected into the `.py` file as soon as the notebook is saved.
+
 ## Example 2 - Python file -> Jupyter notebook

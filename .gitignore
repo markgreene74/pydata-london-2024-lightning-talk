@@ -1,2 +1,3 @@
 # do not commit notebook (.ipynb files)
 *.ipynb
+.ipynb_checkpoints/

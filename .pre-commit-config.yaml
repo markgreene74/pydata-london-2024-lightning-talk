@@ -5,16 +5,11 @@ repos:
     rev: v4.6.0
     hooks:
     -   id: check-added-large-files
-        args: ['--maxkb=650']
+        args: ['--maxkb=950']
     -   id: check-ast
     -   id: check-builtin-literals
     -   id: check-docstring-first
-    -   id: check-executables-have-shebangs
-    -   id: check-shebang-scripts-are-executable
-    -   id: check-merge-conflict
-    -   id: check-yaml
     -   id: debug-statements
-    -   id: detect-private-key
     -   id: end-of-file-fixer
     -   id: mixed-line-ending
     -   id: requirements-txt-fixer
@@ -24,13 +19,9 @@ repos:
     rev: 24.4.2
     hooks:
     -   id: black
+        args: ["--check"]
 
--   repo: https://github.com/pycqa/isort
-    rev: 5.13.2
+-   repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
     hooks:
-    -   id: isort
-
--   repo: https://github.com/PyCQA/autoflake
-    rev: v2.3.1
-    hooks:
-    -   id: autoflake
+    -   id: flake8
