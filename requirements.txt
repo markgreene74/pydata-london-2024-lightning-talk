@@ -55,7 +55,7 @@ matplotlib==3.9.0
 matplotlib-inline==0.1.7
 mdit-py-plugins==0.4.1
 mdurl==0.1.2
-mistune==3.0.2
+mistune==3.2.1
 nbclient==0.10.0
 nbconvert==7.17.1
 nbformat==5.10.4
